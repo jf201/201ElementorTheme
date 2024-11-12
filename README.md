@@ -1,74 +1,74 @@
-# icchs_(web/icchs)_
+# 201ElementorTheme
 
-1. REPLACE "elementor_starter_201" with "desired_name"
-2. REPLACE "ElementorStarterTNO" with "DesiredName"
+Wordpress Theme for 201 elementor projects
 
+## USE WITH LANDO
 
-Wordpress Theme for icchs
+### Create Lando wordpress project
 
-## Technologies Used
-- [WordPress](https://wordpress.org/)
-- [Vite](https://vitejs.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Sass](https://sass-lang.com/)
-- [Docker](https://www.docker.com/)
+    [Lando](https://docs.lando.dev/plugins/wordpress/getting-started.html)
 
-## How to Use
+    or use [newlando](https://github.com/jf201/landoScript)
 
-To clone the project, run the following command:
+    make sure to change php version to latest and install relevant images (mailhog, phpmyadmin) - detailed instructions in [newlando](https://github.com/jf201/landoScript) readme
 
-```bash
-git clone https://github.com/jf201/elementorStarter.git
-```
-
-### Build the Docker Image
-
-When developing locally the first time you have to build the Docker Image
-
-```bash
-docker compose build
-```
-
-### Spin up the Docker Container
-
-Start the development server on http://localhost:8080:
-
-```bash
-docker compose up -d
-```
 
 ### Enter the Docker wordpress service with bash
 
 ```bash
-docker compose exec wordpress bash
+docker compose exec ***docker_image_name*** bash
 ```
 
 ### Switch into the theme directory
 
 ```bash
-cd ./wp-content/themes/201starter
+cd ./wordpress/wp-content/themes/201ElementorTheme
 ```
 
 ### Install dependencies
 
 Make sure to install the dependencies:
-
-```bash
-npm install
-```
-
 ```bash
 composer install
 ```
 
 ### Get Plugins from production
 
-Connect with SFTP to the production server and download the plugins und uploads folder into the root of this repo.
+### Search & Replace namespaces (case sensitive!)
 
-### Shut down the Docker Container
+1. REPLACE "elementor_starter_201" with "desired_name"
+2. REPLACE "ElementorStarterTNO" with "DesiredName"
 
-Shut them down again when you're finished working
+### Install npm packages
+run ```npm install```
+
+## Sharing environment internally
+Database can be exported with
 
 ```bash
-docker compose down
+lando db-export
+```
+
+and imported with
+
+```bash
+lando db-import
+```
+
+## Legacy projects
+
+1. Start server
+2. Enter phpmyAdmin
+3. import SQL dump
+4. copy plugins
+5. Enter docker image bash and run wp cli search and replace
+
+```bash
+docker compose exec ***docker_image_name*** bash
+```
+ 
+```bash
+wp search-replace ***'http://example-legacy-project.com'***  ***'http://lando-domain.lndo.site'*** --recurse-objects --skip-columns=guid --skip-tables=wp_users --allow-root
+
+wp search-replace ***'example-legacy-project.com'***  ***'lando-domain.lndo.site'*** --recurse-objects --skip-columns=guid --skip-tables=wp_users --allow-root
 ```
