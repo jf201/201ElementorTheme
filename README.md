@@ -6,7 +6,7 @@ Wordpress Theme for 201 elementor projects
 
 ### Create Lando wordpress project
 
-[Lando](https://docs.lando.dev/plugins/wordpress/getting-started.html)
+Follow instructions on [Lando - getting started](https://docs.lando.dev/plugins/wordpress/getting-started.html)
 
 or use [newlando](https://github.com/jf201/landoScript)
 
