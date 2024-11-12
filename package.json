@@ -1,0 +1,20 @@
+{
+  "name": "elementor_starter_201",
+  "version": "1.0.2",
+  "description": "Wordpress theme for elementor_starter_201",
+  "author": "Christoph Maier <christoph.maier@koerbler.com>",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "sass": "^1.77.8",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.4"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}
