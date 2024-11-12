@@ -10,7 +10,7 @@ Follow instructions on [Lando - getting started](https://docs.lando.dev/plugins/
 
 or use [newlando](https://github.com/jf201/landoScript)
 
-make sure to change php version to latest and install relevant images (mailhog, phpmyadmin) - detailed instructions in [newlando](https://github.com/jf201/landoScript) readme
+**make sure to change php version to latest and install relevant images (mailhog, phpmyadmin) - detailed instructions in [newlando](https://github.com/jf201/landoScript) readme**
 
 
 ### Enter the Docker wordpress service with bash
