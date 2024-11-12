@@ -6,11 +6,11 @@ Wordpress Theme for 201 elementor projects
 
 ### Create Lando wordpress project
 
-    [Lando](https://docs.lando.dev/plugins/wordpress/getting-started.html)
+[Lando](https://docs.lando.dev/plugins/wordpress/getting-started.html)
 
-    or use [newlando](https://github.com/jf201/landoScript)
+or use [newlando](https://github.com/jf201/landoScript)
 
-    make sure to change php version to latest and install relevant images (mailhog, phpmyadmin) - detailed instructions in [newlando](https://github.com/jf201/landoScript) readme
+make sure to change php version to latest and install relevant images (mailhog, phpmyadmin) - detailed instructions in [newlando](https://github.com/jf201/landoScript) readme
 
 
 ### Enter the Docker wordpress service with bash
