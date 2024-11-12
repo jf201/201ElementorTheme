@@ -1,6 +1,6 @@
 # 201ElementorTheme
 
-Wordpress Theme for 201 elementor projects
+Wordpress Child Theme for Hello Elementor
 
 ## USE WITH LANDO
 
@@ -15,8 +15,14 @@ Wordpress Theme for 201 elementor projects
 
 ### Enter the Docker wordpress service with bash
 
+use the command below to find docker_image_id
+
 ```bash
-docker compose exec ***docker_image_name*** bash
+docker ps
+```
+
+```bash
+docker exec -it ***docker_image_id*** bash
 ```
 
 ### Switch into the theme directory
@@ -40,7 +46,12 @@ composer install
 2. REPLACE "ElementorStarterTNO" with "DesiredName"
 
 ### Install npm packages
+
 run ```npm install```
+
+### Unregister hello-elementor theme styles
+
+You can find this under Appearance > Theme Settings in wp-admin
 
 ## Sharing environment internally
 Database can be exported with
@@ -64,7 +75,7 @@ lando db-import
 5. Enter docker image bash and run wp cli search and replace
 
 ```bash
-docker compose exec ***docker_image_name*** bash
+docker exec -it ***docker_image_id*** bash
 ```
  
 ```bash
