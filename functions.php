@@ -45,18 +45,6 @@ add_filter('auto_plugin_update_send_email', '__return_false');
 add_filter('auto_theme_update_send_email', '__return_false');
 
 /**
- * Remove Astra styles
- */
-add_action(
-    'wp_enqueue_scripts',
-    function () {
-        wp_dequeue_style('astra-theme-css');
-        wp_dequeue_style('astra-addon-css');
-    },
-    99,
-);
-
-/**
  * Enable SVG uploads
  */
 
