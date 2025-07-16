@@ -7,8 +7,24 @@
         margin: 0 auto;
         gap: $--row-gap $--column-gap;
 
+        .theme-shop-header {
+            height: 460px;
+            position: relative;
+            background-size: cover !important;
+            background-position: center !important;
+
+            &-overlay {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%);
+                text-shadow: 2px 2px 40px black;
+            }
+        }
+
         .woocommerce-breadcrumb {
             color: $--e-global-color-accent;
+            margin-top: 20px;
 
             a {
                 color: $--e-global-color-accent;
