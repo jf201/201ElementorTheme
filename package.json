@@ -1,7 +1,7 @@
 {
-  "name": "elementor_starter_201",
+  "name": "kumo_mall",
   "version": "1.0.2",
-  "description": "Wordpress theme for elementor_starter_201",
+  "description": "Wordpress theme for kumo_mall",
   "author": "Christoph Maier <christoph.maier@koerbler.com>",
   "private": true,
   "type": "module",

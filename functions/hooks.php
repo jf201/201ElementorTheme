@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use ElementorStarterTNO\Elementor\ElementorThemeWidgets;
+use KumoMall\Elementor\ElementorThemeWidgets;
 
-if (!defined('ABSPATH')) {
+if (!defined("ABSPATH")) {
     exit();
 }
 
-add_action('init', fn() => ElementorThemeWidgets::instance());
+add_action("init", fn() => ElementorThemeWidgets::instance());

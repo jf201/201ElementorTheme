@@ -1,1 +1,19 @@
-@import './elementor/themeExampleWidget';
+/* COLORS */
+$--e-global-color-primary: #4a3933;
+$--e-global-color-secondary: #f0a500;
+$--e-global-color-text: #e6d5b8;
+$--e-global-color-accent: #e45826;
+
+/* TYPOGRAPHY */
+$--e-global-typography-text-font-family: "Helvetica";
+
+/* GAPS */
+$--row-gap: 20px;
+$--column-gap: 20px;
+$--content-padding-top: 320px;
+$--content-padding-top-shop: 120px;
+
+@import "./elementor/themeExampleWidget";
+@import "./base/defaults";
+@import "./base/header";
+@import "./shop/archive";

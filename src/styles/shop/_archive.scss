@@ -1,0 +1,34 @@
+.site-content {
+    padding-top: $--content-padding-top-shop !important;
+}
+.kumo__shop {
+    &__container {
+        max-width: 1140px;
+        margin: 0 auto;
+        gap: $--row-gap $--column-gap;
+
+        .woocommerce-breadcrumb {
+            color: $--e-global-color-accent;
+
+            a {
+                color: $--e-global-color-accent;
+            }
+        }
+
+        .woocommerce-pagination {
+            .page-numbers {
+                border: 1px solid $--e-global-color-text;
+
+                li {
+                    border: 1px solid $--e-global-color-text;
+                }
+
+                span {
+                    &.current {
+                        background: $--e-global-color-secondary;
+                    }
+                }
+            }
+        }
+    }
+}

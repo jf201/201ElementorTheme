@@ -77,7 +77,7 @@ lando db-import
 ```bash
 docker exec -it ***docker_image_id*** bash
 ```
- 
+
 ```bash
 wp search-replace ***'http://example-legacy-project.com'***  ***'http://lando-domain.lndo.site'*** --recurse-objects --skip-columns=guid --skip-tables=wp_users --allow-root
 

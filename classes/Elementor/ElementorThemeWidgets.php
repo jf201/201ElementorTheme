@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace ElementorStarterTNO\Elementor;
+namespace KumoMall\Elementor;
 
-use ElementorStarterTNO\Elementor\Widgets\ThemeExampleWidget;
+use KumoMall\Elementor\Widgets\ThemeExampleWidget;
 
-if (!defined('ABSPATH')) {
+if (!defined("ABSPATH")) {
     exit();
 }
 
@@ -25,7 +25,7 @@ final class ElementorThemeWidgets
 
     private function __construct()
     {
-        add_action('elementor/widgets/register', [$this, 'initWidgets']);
+        add_action("elementor/widgets/register", [$this, "initWidgets"]);
     }
 
     public function initWidgets($widgetsManager)

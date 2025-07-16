@@ -1,0 +1,46 @@
+body *,
+body a {
+    color: $--e-global-color-text;
+}
+
+body a:hover {
+    color: $--e-global-color-secondary;
+}
+
+.site-logo svg {
+    fill: $--e-global-color-text;
+}
+
+body {
+    background: $--e-global-color-primary !important;
+    font-family: $--e-global-typography-text-font-family !important;
+
+    .site-content {
+        padding-top: $--content-padding-top;
+    }
+
+    select {
+        background: $--e-global-color-primary;
+        outline: none;
+        text-align: left;
+        border: none;
+        border-bottom: 2px solid $--e-global-color-text;
+        border-radius: 0;
+    }
+
+    a.button {
+        background: $--e-global-color-primary !important;
+        color: $--e-global-color-text !important;
+        border: 1px solid $--e-global-color-text !important;
+        transition: all 0.2s ease-in;
+        border-radius: 0 !important;
+        font-weight: 400 !important;
+
+        &:hover {
+            background: $--e-global-color-secondary !important;
+            color: $--e-global-color-primary !important;
+            border-color: $--e-global-color-secondary !important;
+            transition: all 0.2s ease-in;
+        }
+    }
+}
